@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'simple_form'
 gem 'devise'
 
+
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
@@ -67,6 +68,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.5'
+  gem "factory_bot_rails"
 end
 
 gem 'popper_js', '~> 1.11.1'
