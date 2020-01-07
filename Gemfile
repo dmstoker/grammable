@@ -8,6 +8,11 @@ gem 'rails', '~> 5.2.3'
 gem 'jquery-rails'
 gem 'simple_form'
 gem 'devise'
+gem 'carrierwave', '~> 2.0'
+gem "figaro"
+gem 'fog-aws'
+gem "mini_magick"
+
 
 
 # Use postgresql as the database for Active Record

@@ -149,9 +149,12 @@ RSpec.describe GramsController, type: :controller do
       user = FactoryBot.create(:user)
       sign_in user
 
-      post :create, params: { gram: { message: 'Hello!' } }
-      expect(response).to redirect_to root_path
-
+      post :create, params: {
+        gram: {
+          message: 'Hello!',
+          picture: fixture_file_upload("/picture.png", 'image/png')
+              }
+            }
       gram = Gram.last
       expect(gram.message).to eq("Hello!")
       expect(gram.user).to eq(user)
@@ -167,7 +170,7 @@ RSpec.describe GramsController, type: :controller do
       expect(gram_count).to eq Gram.count
     end
 
-  
+
 
 
   end
