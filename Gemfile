@@ -8,7 +8,7 @@ gem 'rails', '~> 5.2.3'
 gem 'jquery-rails'
 gem 'simple_form'
 gem 'devise'
-gem 'carrierwave', '~> 2.0'
+gem 'carrierwave', '~> 2.1'
 gem "figaro"
 gem 'fog-aws'
 gem "mini_magick"
